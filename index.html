@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css starter</title>
+    <title>Account</title>
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <div class="container">
+        <div class="heading-box">
+            <h1 class="heading">Account settings</h1>
+            <a href="#" class="header-link"><img class="img-exit" src="./img/xmark-solid.svg" alt="x-mark" width="16" height="16"></a>
+        </div>
+
+        <!-- Form -->
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <img class="user-img" src="./img/cv-photo.jpg" alt="user-img" width="70" height="70">
+            <label>Username <input class="username" type="text" name="user_name" id="user_name" placeholder="Enter your username"></label>
+            <div class="input-box">
+                <label>First Name <input class="first_name" type="text" name="first_name" id="first_name" placeholder="Enter your first name"></label>
+
+                <label> Last Name <input class="first_name" type="text" id="last_name" name="last_name" placeholder="Enter your last name"></label>
+            </div>
+            <label> Email <input class="email" type="email" name="email" id="email" placeholder="Enter your email"></label>
+
+            <label> Bio <textarea class="bio" name="bio" id="bio" placeholder="Tell us about yourself"></textarea></label>
+
+        </form>
+
+        <div class="btn-box">
+            <button class="btn left" type="button">Cancel</button>
+            <button class="btn" type="submit">Save</button>
+        </div>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
